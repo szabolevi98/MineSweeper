@@ -13,9 +13,9 @@ namespace MineSweeperApp
     public partial class MineForm : Form
     {
 
-        List<Panel> mineList = new List<Panel>();
-        bool Start { get; set; }
-        int Pont { get; set; }
+        private List<Panel> mineList = new List<Panel>();
+        private bool Start { get; set; }
+        private int Pont { get; set; }
 
         public MineForm()
         {
