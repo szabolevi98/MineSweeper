@@ -13,7 +13,7 @@ namespace MineSweeperApp
 {
     public partial class MineForm : Form
     {
-        private List<Panel> MineList { get; set; } = new List<Panel>();
+        private List<Panel> MineList = new List<Panel>();
         private bool Cheat { get; set; } = false;
         private bool Start { get; set; } = false;
         private int Point { get; set; } = 0;
@@ -90,40 +90,28 @@ namespace MineSweeperApp
                 panel.BackColor = Color.White;
                 panel.Enabled = true;
             }
-            placeMines(numericUpDown.Value);
-            Start = true;
-        }
-
-        private void placeMines(decimal number)
-        {
-            Random r = new Random();
             if (MineList.Count != 0)
             {
                 MineList.Clear();
             }
-            for (int i = 0; i < number; i++)
+            Random r = new Random();
+            for (int i = 0; i < numericUpDown.Value; i++)
             {
-                string randomName = "panel" + r.Next(1, 101);
-                foreach (Panel panel in this.Controls.OfType<Panel>())
+                Panel panel = (Panel)this.Controls["panel" + r.Next(1, 101)];
+                if (!MineList.Contains(panel))
                 {
-                    if (panel.Name == randomName)
+                    MineList.Add(panel);
+                    if (Cheat)
                     {
-                        if (!MineList.Contains(panel))
-                        {
-                            MineList.Add(panel);
-                            if (Cheat)
-                            {
-                                panel.BackColor = Color.Yellow;
-                            }
-                        }
-                        else
-                        {
-                            i--;
-                        }
-                        break;
+                        panel.BackColor = Color.Yellow;
                     }
                 }
+                else
+                {
+                    i--;
+                }
             }
+            Start = true;
         }
     }
 }
