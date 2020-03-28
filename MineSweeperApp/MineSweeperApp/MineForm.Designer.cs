@@ -143,7 +143,7 @@
             this.panel1.Location = new System.Drawing.Point(245, 34);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(20, 20);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 5;
             this.panel1.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel2
@@ -153,7 +153,7 @@
             this.panel2.Location = new System.Drawing.Point(219, 34);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(20, 20);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 6;
             this.panel2.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel3
@@ -163,7 +163,7 @@
             this.panel3.Location = new System.Drawing.Point(193, 34);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 20);
-            this.panel3.TabIndex = 2;
+            this.panel3.TabIndex = 7;
             this.panel3.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel4
@@ -173,7 +173,7 @@
             this.panel4.Location = new System.Drawing.Point(167, 34);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(20, 20);
-            this.panel4.TabIndex = 3;
+            this.panel4.TabIndex = 8;
             this.panel4.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel5
@@ -183,7 +183,7 @@
             this.panel5.Location = new System.Drawing.Point(141, 34);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(20, 20);
-            this.panel5.TabIndex = 4;
+            this.panel5.TabIndex = 9;
             this.panel5.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel6
@@ -193,7 +193,7 @@
             this.panel6.Location = new System.Drawing.Point(115, 34);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(20, 20);
-            this.panel6.TabIndex = 5;
+            this.panel6.TabIndex = 10;
             this.panel6.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel7
@@ -203,7 +203,7 @@
             this.panel7.Location = new System.Drawing.Point(89, 34);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(20, 20);
-            this.panel7.TabIndex = 6;
+            this.panel7.TabIndex = 11;
             this.panel7.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel8
@@ -213,7 +213,7 @@
             this.panel8.Location = new System.Drawing.Point(63, 34);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(20, 20);
-            this.panel8.TabIndex = 7;
+            this.panel8.TabIndex = 12;
             this.panel8.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel9
@@ -223,7 +223,7 @@
             this.panel9.Location = new System.Drawing.Point(37, 34);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(20, 20);
-            this.panel9.TabIndex = 8;
+            this.panel9.TabIndex = 13;
             this.panel9.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel10
@@ -233,7 +233,7 @@
             this.panel10.Location = new System.Drawing.Point(11, 34);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(20, 20);
-            this.panel10.TabIndex = 9;
+            this.panel10.TabIndex = 14;
             this.panel10.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel11
@@ -243,7 +243,7 @@
             this.panel11.Location = new System.Drawing.Point(245, 60);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(20, 20);
-            this.panel11.TabIndex = 19;
+            this.panel11.TabIndex = 15;
             this.panel11.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel12
@@ -253,7 +253,7 @@
             this.panel12.Location = new System.Drawing.Point(219, 60);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(20, 20);
-            this.panel12.TabIndex = 18;
+            this.panel12.TabIndex = 16;
             this.panel12.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel13
@@ -273,7 +273,7 @@
             this.panel14.Location = new System.Drawing.Point(167, 60);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(20, 20);
-            this.panel14.TabIndex = 16;
+            this.panel14.TabIndex = 18;
             this.panel14.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel15
@@ -283,7 +283,7 @@
             this.panel15.Location = new System.Drawing.Point(141, 60);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(20, 20);
-            this.panel15.TabIndex = 15;
+            this.panel15.TabIndex = 19;
             this.panel15.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel16
@@ -293,7 +293,7 @@
             this.panel16.Location = new System.Drawing.Point(115, 60);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(20, 20);
-            this.panel16.TabIndex = 14;
+            this.panel16.TabIndex = 20;
             this.panel16.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel17
@@ -303,7 +303,7 @@
             this.panel17.Location = new System.Drawing.Point(89, 60);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(20, 20);
-            this.panel17.TabIndex = 13;
+            this.panel17.TabIndex = 21;
             this.panel17.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel18
@@ -313,7 +313,7 @@
             this.panel18.Location = new System.Drawing.Point(63, 60);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(20, 20);
-            this.panel18.TabIndex = 12;
+            this.panel18.TabIndex = 22;
             this.panel18.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel19
@@ -323,7 +323,7 @@
             this.panel19.Location = new System.Drawing.Point(37, 60);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(20, 20);
-            this.panel19.TabIndex = 11;
+            this.panel19.TabIndex = 23;
             this.panel19.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel20
@@ -333,7 +333,7 @@
             this.panel20.Location = new System.Drawing.Point(11, 60);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(20, 20);
-            this.panel20.TabIndex = 10;
+            this.panel20.TabIndex = 24;
             this.panel20.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel21
@@ -343,7 +343,7 @@
             this.panel21.Location = new System.Drawing.Point(245, 86);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(20, 20);
-            this.panel21.TabIndex = 29;
+            this.panel21.TabIndex = 25;
             this.panel21.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel22
@@ -353,7 +353,7 @@
             this.panel22.Location = new System.Drawing.Point(219, 86);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(20, 20);
-            this.panel22.TabIndex = 28;
+            this.panel22.TabIndex = 26;
             this.panel22.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel23
@@ -373,7 +373,7 @@
             this.panel24.Location = new System.Drawing.Point(167, 86);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(20, 20);
-            this.panel24.TabIndex = 26;
+            this.panel24.TabIndex = 28;
             this.panel24.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel25
@@ -383,7 +383,7 @@
             this.panel25.Location = new System.Drawing.Point(141, 86);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(20, 20);
-            this.panel25.TabIndex = 25;
+            this.panel25.TabIndex = 29;
             this.panel25.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel26
@@ -393,7 +393,7 @@
             this.panel26.Location = new System.Drawing.Point(115, 86);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(20, 20);
-            this.panel26.TabIndex = 24;
+            this.panel26.TabIndex = 30;
             this.panel26.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel27
@@ -403,7 +403,7 @@
             this.panel27.Location = new System.Drawing.Point(89, 86);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(20, 20);
-            this.panel27.TabIndex = 23;
+            this.panel27.TabIndex = 31;
             this.panel27.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel28
@@ -413,7 +413,7 @@
             this.panel28.Location = new System.Drawing.Point(63, 86);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(20, 20);
-            this.panel28.TabIndex = 22;
+            this.panel28.TabIndex = 32;
             this.panel28.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel29
@@ -423,7 +423,7 @@
             this.panel29.Location = new System.Drawing.Point(37, 86);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(20, 20);
-            this.panel29.TabIndex = 21;
+            this.panel29.TabIndex = 33;
             this.panel29.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel30
@@ -433,7 +433,7 @@
             this.panel30.Location = new System.Drawing.Point(11, 86);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(20, 20);
-            this.panel30.TabIndex = 20;
+            this.panel30.TabIndex = 34;
             this.panel30.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel31
@@ -443,7 +443,7 @@
             this.panel31.Location = new System.Drawing.Point(245, 112);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(20, 20);
-            this.panel31.TabIndex = 39;
+            this.panel31.TabIndex = 35;
             this.panel31.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel32
@@ -453,7 +453,7 @@
             this.panel32.Location = new System.Drawing.Point(219, 112);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(20, 20);
-            this.panel32.TabIndex = 38;
+            this.panel32.TabIndex = 36;
             this.panel32.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel33
@@ -473,7 +473,7 @@
             this.panel34.Location = new System.Drawing.Point(167, 112);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(20, 20);
-            this.panel34.TabIndex = 36;
+            this.panel34.TabIndex = 38;
             this.panel34.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel35
@@ -483,7 +483,7 @@
             this.panel35.Location = new System.Drawing.Point(141, 112);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(20, 20);
-            this.panel35.TabIndex = 35;
+            this.panel35.TabIndex = 39;
             this.panel35.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel36
@@ -493,7 +493,7 @@
             this.panel36.Location = new System.Drawing.Point(115, 112);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(20, 20);
-            this.panel36.TabIndex = 34;
+            this.panel36.TabIndex = 40;
             this.panel36.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel37
@@ -503,7 +503,7 @@
             this.panel37.Location = new System.Drawing.Point(89, 112);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(20, 20);
-            this.panel37.TabIndex = 33;
+            this.panel37.TabIndex = 41;
             this.panel37.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel38
@@ -513,7 +513,7 @@
             this.panel38.Location = new System.Drawing.Point(63, 112);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(20, 20);
-            this.panel38.TabIndex = 32;
+            this.panel38.TabIndex = 42;
             this.panel38.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel39
@@ -523,7 +523,7 @@
             this.panel39.Location = new System.Drawing.Point(37, 112);
             this.panel39.Name = "panel39";
             this.panel39.Size = new System.Drawing.Size(20, 20);
-            this.panel39.TabIndex = 31;
+            this.panel39.TabIndex = 43;
             this.panel39.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel40
@@ -533,7 +533,7 @@
             this.panel40.Location = new System.Drawing.Point(11, 112);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(20, 20);
-            this.panel40.TabIndex = 30;
+            this.panel40.TabIndex = 44;
             this.panel40.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel41
@@ -543,7 +543,7 @@
             this.panel41.Location = new System.Drawing.Point(245, 138);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(20, 20);
-            this.panel41.TabIndex = 49;
+            this.panel41.TabIndex = 45;
             this.panel41.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel42
@@ -553,7 +553,7 @@
             this.panel42.Location = new System.Drawing.Point(219, 138);
             this.panel42.Name = "panel42";
             this.panel42.Size = new System.Drawing.Size(20, 20);
-            this.panel42.TabIndex = 48;
+            this.panel42.TabIndex = 46;
             this.panel42.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel43
@@ -573,7 +573,7 @@
             this.panel44.Location = new System.Drawing.Point(167, 138);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(20, 20);
-            this.panel44.TabIndex = 46;
+            this.panel44.TabIndex = 48;
             this.panel44.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel45
@@ -583,7 +583,7 @@
             this.panel45.Location = new System.Drawing.Point(141, 138);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(20, 20);
-            this.panel45.TabIndex = 45;
+            this.panel45.TabIndex = 49;
             this.panel45.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel46
@@ -593,7 +593,7 @@
             this.panel46.Location = new System.Drawing.Point(115, 138);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(20, 20);
-            this.panel46.TabIndex = 44;
+            this.panel46.TabIndex = 50;
             this.panel46.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel47
@@ -603,7 +603,7 @@
             this.panel47.Location = new System.Drawing.Point(89, 138);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(20, 20);
-            this.panel47.TabIndex = 43;
+            this.panel47.TabIndex = 51;
             this.panel47.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel48
@@ -613,7 +613,7 @@
             this.panel48.Location = new System.Drawing.Point(63, 138);
             this.panel48.Name = "panel48";
             this.panel48.Size = new System.Drawing.Size(20, 20);
-            this.panel48.TabIndex = 42;
+            this.panel48.TabIndex = 52;
             this.panel48.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel49
@@ -623,7 +623,7 @@
             this.panel49.Location = new System.Drawing.Point(37, 138);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(20, 20);
-            this.panel49.TabIndex = 41;
+            this.panel49.TabIndex = 53;
             this.panel49.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel50
@@ -633,7 +633,7 @@
             this.panel50.Location = new System.Drawing.Point(11, 138);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(20, 20);
-            this.panel50.TabIndex = 40;
+            this.panel50.TabIndex = 54;
             this.panel50.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel51
@@ -643,7 +643,7 @@
             this.panel51.Location = new System.Drawing.Point(245, 164);
             this.panel51.Name = "panel51";
             this.panel51.Size = new System.Drawing.Size(20, 20);
-            this.panel51.TabIndex = 59;
+            this.panel51.TabIndex = 55;
             this.panel51.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel52
@@ -653,7 +653,7 @@
             this.panel52.Location = new System.Drawing.Point(219, 164);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(20, 20);
-            this.panel52.TabIndex = 58;
+            this.panel52.TabIndex = 56;
             this.panel52.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel53
@@ -673,7 +673,7 @@
             this.panel54.Location = new System.Drawing.Point(167, 164);
             this.panel54.Name = "panel54";
             this.panel54.Size = new System.Drawing.Size(20, 20);
-            this.panel54.TabIndex = 56;
+            this.panel54.TabIndex = 58;
             this.panel54.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel55
@@ -683,7 +683,7 @@
             this.panel55.Location = new System.Drawing.Point(141, 164);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(20, 20);
-            this.panel55.TabIndex = 55;
+            this.panel55.TabIndex = 59;
             this.panel55.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel56
@@ -693,7 +693,7 @@
             this.panel56.Location = new System.Drawing.Point(115, 164);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(20, 20);
-            this.panel56.TabIndex = 54;
+            this.panel56.TabIndex = 60;
             this.panel56.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel57
@@ -703,7 +703,7 @@
             this.panel57.Location = new System.Drawing.Point(89, 164);
             this.panel57.Name = "panel57";
             this.panel57.Size = new System.Drawing.Size(20, 20);
-            this.panel57.TabIndex = 53;
+            this.panel57.TabIndex = 61;
             this.panel57.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel58
@@ -713,7 +713,7 @@
             this.panel58.Location = new System.Drawing.Point(63, 164);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(20, 20);
-            this.panel58.TabIndex = 52;
+            this.panel58.TabIndex = 62;
             this.panel58.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel59
@@ -723,7 +723,7 @@
             this.panel59.Location = new System.Drawing.Point(37, 164);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(20, 20);
-            this.panel59.TabIndex = 51;
+            this.panel59.TabIndex = 63;
             this.panel59.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel60
@@ -733,7 +733,7 @@
             this.panel60.Location = new System.Drawing.Point(11, 164);
             this.panel60.Name = "panel60";
             this.panel60.Size = new System.Drawing.Size(20, 20);
-            this.panel60.TabIndex = 50;
+            this.panel60.TabIndex = 64;
             this.panel60.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel61
@@ -743,7 +743,7 @@
             this.panel61.Location = new System.Drawing.Point(245, 190);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(20, 20);
-            this.panel61.TabIndex = 69;
+            this.panel61.TabIndex = 65;
             this.panel61.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel62
@@ -753,7 +753,7 @@
             this.panel62.Location = new System.Drawing.Point(219, 190);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(20, 20);
-            this.panel62.TabIndex = 68;
+            this.panel62.TabIndex = 66;
             this.panel62.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel63
@@ -773,7 +773,7 @@
             this.panel64.Location = new System.Drawing.Point(167, 190);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(20, 20);
-            this.panel64.TabIndex = 66;
+            this.panel64.TabIndex = 68;
             this.panel64.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel65
@@ -783,7 +783,7 @@
             this.panel65.Location = new System.Drawing.Point(141, 190);
             this.panel65.Name = "panel65";
             this.panel65.Size = new System.Drawing.Size(20, 20);
-            this.panel65.TabIndex = 65;
+            this.panel65.TabIndex = 69;
             this.panel65.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel66
@@ -793,7 +793,7 @@
             this.panel66.Location = new System.Drawing.Point(115, 190);
             this.panel66.Name = "panel66";
             this.panel66.Size = new System.Drawing.Size(20, 20);
-            this.panel66.TabIndex = 64;
+            this.panel66.TabIndex = 70;
             this.panel66.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel67
@@ -803,7 +803,7 @@
             this.panel67.Location = new System.Drawing.Point(89, 190);
             this.panel67.Name = "panel67";
             this.panel67.Size = new System.Drawing.Size(20, 20);
-            this.panel67.TabIndex = 63;
+            this.panel67.TabIndex = 71;
             this.panel67.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel68
@@ -813,7 +813,7 @@
             this.panel68.Location = new System.Drawing.Point(63, 190);
             this.panel68.Name = "panel68";
             this.panel68.Size = new System.Drawing.Size(20, 20);
-            this.panel68.TabIndex = 62;
+            this.panel68.TabIndex = 72;
             this.panel68.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel69
@@ -823,7 +823,7 @@
             this.panel69.Location = new System.Drawing.Point(37, 190);
             this.panel69.Name = "panel69";
             this.panel69.Size = new System.Drawing.Size(20, 20);
-            this.panel69.TabIndex = 61;
+            this.panel69.TabIndex = 73;
             this.panel69.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel70
@@ -833,7 +833,7 @@
             this.panel70.Location = new System.Drawing.Point(11, 190);
             this.panel70.Name = "panel70";
             this.panel70.Size = new System.Drawing.Size(20, 20);
-            this.panel70.TabIndex = 60;
+            this.panel70.TabIndex = 74;
             this.panel70.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel71
@@ -843,7 +843,7 @@
             this.panel71.Location = new System.Drawing.Point(245, 216);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(20, 20);
-            this.panel71.TabIndex = 49;
+            this.panel71.TabIndex = 75;
             this.panel71.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel72
@@ -853,7 +853,7 @@
             this.panel72.Location = new System.Drawing.Point(219, 216);
             this.panel72.Name = "panel72";
             this.panel72.Size = new System.Drawing.Size(20, 20);
-            this.panel72.TabIndex = 48;
+            this.panel72.TabIndex = 76;
             this.panel72.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel73
@@ -863,7 +863,7 @@
             this.panel73.Location = new System.Drawing.Point(193, 216);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(20, 20);
-            this.panel73.TabIndex = 47;
+            this.panel73.TabIndex = 77;
             this.panel73.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel74
@@ -873,7 +873,7 @@
             this.panel74.Location = new System.Drawing.Point(167, 216);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(20, 20);
-            this.panel74.TabIndex = 46;
+            this.panel74.TabIndex = 78;
             this.panel74.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel75
@@ -883,7 +883,7 @@
             this.panel75.Location = new System.Drawing.Point(141, 216);
             this.panel75.Name = "panel75";
             this.panel75.Size = new System.Drawing.Size(20, 20);
-            this.panel75.TabIndex = 45;
+            this.panel75.TabIndex = 79;
             this.panel75.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel76
@@ -893,7 +893,7 @@
             this.panel76.Location = new System.Drawing.Point(115, 216);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(20, 20);
-            this.panel76.TabIndex = 44;
+            this.panel76.TabIndex = 80;
             this.panel76.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel77
@@ -903,7 +903,7 @@
             this.panel77.Location = new System.Drawing.Point(89, 216);
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(20, 20);
-            this.panel77.TabIndex = 43;
+            this.panel77.TabIndex = 81;
             this.panel77.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel78
@@ -913,7 +913,7 @@
             this.panel78.Location = new System.Drawing.Point(63, 216);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(20, 20);
-            this.panel78.TabIndex = 42;
+            this.panel78.TabIndex = 82;
             this.panel78.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel79
@@ -923,7 +923,7 @@
             this.panel79.Location = new System.Drawing.Point(37, 216);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(20, 20);
-            this.panel79.TabIndex = 41;
+            this.panel79.TabIndex = 83;
             this.panel79.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel80
@@ -933,7 +933,7 @@
             this.panel80.Location = new System.Drawing.Point(11, 216);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(20, 20);
-            this.panel80.TabIndex = 40;
+            this.panel80.TabIndex = 84;
             this.panel80.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel81
@@ -943,7 +943,7 @@
             this.panel81.Location = new System.Drawing.Point(245, 242);
             this.panel81.Name = "panel81";
             this.panel81.Size = new System.Drawing.Size(20, 20);
-            this.panel81.TabIndex = 79;
+            this.panel81.TabIndex = 85;
             this.panel81.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel82
@@ -953,7 +953,7 @@
             this.panel82.Location = new System.Drawing.Point(219, 242);
             this.panel82.Name = "panel82";
             this.panel82.Size = new System.Drawing.Size(20, 20);
-            this.panel82.TabIndex = 78;
+            this.panel82.TabIndex = 86;
             this.panel82.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel83
@@ -963,7 +963,7 @@
             this.panel83.Location = new System.Drawing.Point(193, 242);
             this.panel83.Name = "panel83";
             this.panel83.Size = new System.Drawing.Size(20, 20);
-            this.panel83.TabIndex = 77;
+            this.panel83.TabIndex = 87;
             this.panel83.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel84
@@ -973,7 +973,7 @@
             this.panel84.Location = new System.Drawing.Point(167, 242);
             this.panel84.Name = "panel84";
             this.panel84.Size = new System.Drawing.Size(20, 20);
-            this.panel84.TabIndex = 76;
+            this.panel84.TabIndex = 88;
             this.panel84.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel85
@@ -983,7 +983,7 @@
             this.panel85.Location = new System.Drawing.Point(141, 242);
             this.panel85.Name = "panel85";
             this.panel85.Size = new System.Drawing.Size(20, 20);
-            this.panel85.TabIndex = 75;
+            this.panel85.TabIndex = 89;
             this.panel85.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel86
@@ -993,7 +993,7 @@
             this.panel86.Location = new System.Drawing.Point(115, 242);
             this.panel86.Name = "panel86";
             this.panel86.Size = new System.Drawing.Size(20, 20);
-            this.panel86.TabIndex = 74;
+            this.panel86.TabIndex = 90;
             this.panel86.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel87
@@ -1003,7 +1003,7 @@
             this.panel87.Location = new System.Drawing.Point(89, 242);
             this.panel87.Name = "panel87";
             this.panel87.Size = new System.Drawing.Size(20, 20);
-            this.panel87.TabIndex = 73;
+            this.panel87.TabIndex = 91;
             this.panel87.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel88
@@ -1013,7 +1013,7 @@
             this.panel88.Location = new System.Drawing.Point(63, 242);
             this.panel88.Name = "panel88";
             this.panel88.Size = new System.Drawing.Size(20, 20);
-            this.panel88.TabIndex = 72;
+            this.panel88.TabIndex = 92;
             this.panel88.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel89
@@ -1023,7 +1023,7 @@
             this.panel89.Location = new System.Drawing.Point(37, 242);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(20, 20);
-            this.panel89.TabIndex = 71;
+            this.panel89.TabIndex = 93;
             this.panel89.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel90
@@ -1033,7 +1033,7 @@
             this.panel90.Location = new System.Drawing.Point(11, 242);
             this.panel90.Name = "panel90";
             this.panel90.Size = new System.Drawing.Size(20, 20);
-            this.panel90.TabIndex = 70;
+            this.panel90.TabIndex = 94;
             this.panel90.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel91
@@ -1043,7 +1043,7 @@
             this.panel91.Location = new System.Drawing.Point(245, 268);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(20, 20);
-            this.panel91.TabIndex = 89;
+            this.panel91.TabIndex = 95;
             this.panel91.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel92
@@ -1053,7 +1053,7 @@
             this.panel92.Location = new System.Drawing.Point(219, 268);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(20, 20);
-            this.panel92.TabIndex = 88;
+            this.panel92.TabIndex = 96;
             this.panel92.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel93
@@ -1063,7 +1063,7 @@
             this.panel93.Location = new System.Drawing.Point(193, 268);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(20, 20);
-            this.panel93.TabIndex = 87;
+            this.panel93.TabIndex = 97;
             this.panel93.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel94
@@ -1073,7 +1073,7 @@
             this.panel94.Location = new System.Drawing.Point(167, 268);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(20, 20);
-            this.panel94.TabIndex = 86;
+            this.panel94.TabIndex = 98;
             this.panel94.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel95
@@ -1083,7 +1083,7 @@
             this.panel95.Location = new System.Drawing.Point(141, 268);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(20, 20);
-            this.panel95.TabIndex = 85;
+            this.panel95.TabIndex = 99;
             this.panel95.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel96
@@ -1093,7 +1093,7 @@
             this.panel96.Location = new System.Drawing.Point(115, 268);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(20, 20);
-            this.panel96.TabIndex = 84;
+            this.panel96.TabIndex = 100;
             this.panel96.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel97
@@ -1103,7 +1103,7 @@
             this.panel97.Location = new System.Drawing.Point(89, 268);
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(20, 20);
-            this.panel97.TabIndex = 83;
+            this.panel97.TabIndex = 101;
             this.panel97.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel98
@@ -1113,7 +1113,7 @@
             this.panel98.Location = new System.Drawing.Point(63, 268);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(20, 20);
-            this.panel98.TabIndex = 82;
+            this.panel98.TabIndex = 102;
             this.panel98.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel99
@@ -1123,7 +1123,7 @@
             this.panel99.Location = new System.Drawing.Point(37, 268);
             this.panel99.Name = "panel99";
             this.panel99.Size = new System.Drawing.Size(20, 20);
-            this.panel99.TabIndex = 81;
+            this.panel99.TabIndex = 103;
             this.panel99.Click += new System.EventHandler(this.panel_Click);
             // 
             // panel100
@@ -1133,7 +1133,7 @@
             this.panel100.Location = new System.Drawing.Point(11, 268);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(20, 20);
-            this.panel100.TabIndex = 80;
+            this.panel100.TabIndex = 104;
             this.panel100.Click += new System.EventHandler(this.panel_Click);
             // 
             // label1
@@ -1142,7 +1142,7 @@
             this.label1.Location = new System.Drawing.Point(10, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 91;
+            this.label1.TabIndex = 2;
             this.label1.Text = "Aknák:";
             // 
             // numericUpDown
@@ -1160,7 +1160,7 @@
             0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.Size = new System.Drawing.Size(51, 20);
-            this.numericUpDown.TabIndex = 92;
+            this.numericUpDown.TabIndex = 0;
             this.numericUpDown.Value = new decimal(new int[] {
             10,
             0,
@@ -1172,7 +1172,7 @@
             this.buttonStart.Location = new System.Drawing.Point(109, 7);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(46, 22);
-            this.buttonStart.TabIndex = 93;
+            this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Mehet";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
@@ -1183,7 +1183,7 @@
             this.label2.Location = new System.Drawing.Point(216, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 94;
+            this.label2.TabIndex = 3;
             this.label2.Text = "Pont:";
             // 
             // labelPont
@@ -1192,7 +1192,7 @@
             this.labelPont.Location = new System.Drawing.Point(247, 10);
             this.labelPont.Name = "labelPont";
             this.labelPont.Size = new System.Drawing.Size(13, 13);
-            this.labelPont.TabIndex = 95;
+            this.labelPont.TabIndex = 4;
             this.labelPont.Text = "0";
             // 
             // MineForm

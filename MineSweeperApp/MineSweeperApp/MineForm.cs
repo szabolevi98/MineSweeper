@@ -85,14 +85,14 @@ namespace MineSweeperApp
             Point = 0;
             labelPont.Text = Point.ToString();
             buttonStart.Text = "Újra";
+            if (MineList.Count != 0)
+            {
+                MineList.Clear();
+            }
             foreach (Panel panel in this.Controls.OfType<Panel>())
             {
                 panel.BackColor = Color.White;
                 panel.Enabled = true;
-            }
-            if (MineList.Count != 0)
-            {
-                MineList.Clear();
             }
             Random r = new Random();
             for (int i = 0; i < numericUpDown.Value; i++)
