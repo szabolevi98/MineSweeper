@@ -13,7 +13,7 @@ namespace MineSweeperApp
 {
     public partial class MineForm : Form
     {
-        private List<Panel> MineList = new List<Panel>();
+        private List<Panel> mineList = new List<Panel>();
         private bool Cheat { get; set; } = false;
         private bool Start { get; set; } = false;
         private int Point { get; set; } = 0;
@@ -21,6 +21,10 @@ namespace MineSweeperApp
         public MineForm()
         {
             InitializeComponent();
+        }
+
+        private void MineForm_Load(object sender, EventArgs e)
+        {
             if (Debugger.IsAttached)
             {
                 DialogResult result = MessageBox.Show("Engedélyezed a csalást?", this.Text, MessageBoxButtons.YesNo);
@@ -35,34 +39,34 @@ namespace MineSweeperApp
         {
             if (Start)
             {
-                for (int i = 0; i < MineList.Count; i++)
+                for (int i = 0; i < mineList.Count; i++)
                 {
-                    if (sender == MineList[i])
+                    if (sender == mineList[i])
                     {
-                        foreach (var mitem in MineList)
+                        foreach (var mitem in mineList)
                         {
                             mitem.Enabled = false;
                             mitem.BackColor = Color.Red;
                         }
                         Start = false;
-                        MessageBox.Show($"Bumm... Pont: {100 - MineList.Count}/{Point}", this.Text);
+                        MessageBox.Show($"Bumm... Pont: {100 - mineList.Count}/{Point}", this.Text);
                         break;
                     }
-                    else if (i == MineList.Count-1)
+                    else if (i == mineList.Count-1)
                     {
                         Panel senderpanel = (Panel)sender;
                         senderpanel.Enabled = false;
                         senderpanel.BackColor = Color.Green;
                         Point++;
                         labelPont.Text = Point.ToString();
-                        if (Point == (100 - MineList.Count))
+                        if (Point == (100 - mineList.Count))
                         {
                             Start = false;
-                            foreach (var mitem in MineList)
+                            foreach (var mitem in mineList)
                             {
                                 mitem.BackColor = Color.Yellow;
                             }
-                            MessageBox.Show($"Nyertél! Pont: {100 - MineList.Count}/{Point}", this.Text);
+                            MessageBox.Show($"Nyertél! Pont: {100 - mineList.Count}/{Point}", this.Text);
                         }
                     }
                 }
@@ -85,30 +89,39 @@ namespace MineSweeperApp
             Point = 0;
             labelPont.Text = Point.ToString();
             buttonStart.Text = "Újra";
-            if (MineList.Count != 0)
+            if (mineList.Count != 0)
             {
-                MineList.Clear();
-            }
-            foreach (Panel panel in this.Controls.OfType<Panel>())
-            {
-                panel.BackColor = Color.White;
-                panel.Enabled = true;
+                mineList.Clear();
             }
             Random r = new Random();
-            for (int i = 0; i < numericUpDown.Value; i++)
+            List<Panel> panels = this.Controls.OfType<Panel>().ToList();
+            for (int i = 0; i < panels.Count; i++)
             {
-                Panel panel = (Panel)this.Controls["panel" + r.Next(1, 101)];
-                if (!MineList.Contains(panel))
+                if (i < numericUpDown.Value)
                 {
-                    MineList.Add(panel);
-                    if (Cheat)
+                    Panel rndPanel = panels[r.Next(0, panels.Count)];
+                    if (!mineList.Contains(rndPanel))
                     {
-                        panel.BackColor = Color.Yellow;
+                        mineList.Add(rndPanel);
+                        if (Cheat)
+                        {
+                            rndPanel.BackColor = Color.Yellow;
+                        }
+                        else
+                        {
+                            rndPanel.BackColor = Color.White;
+                        }
+                    }
+                    else
+                    {
+                        i--;
+                        continue;
                     }
                 }
-                else
+                panels[i].Enabled = true;
+                if (!mineList.Contains(panels[i]))
                 {
-                    i--;
+                    panels[i].BackColor = Color.White;
                 }
             }
             Start = true;
