@@ -39,35 +39,31 @@ namespace MineSweeperApp
         {
             if (Start)
             {
-                for (int i = 0; i < mineList.Count; i++)
+                if (mineList.Contains(sender))
                 {
-                    if (sender == mineList[i])
+                    foreach (var mitem in mineList)
                     {
+                        mitem.Enabled = false;
+                        mitem.BackColor = Color.Red;
+                    }
+                    Start = false;
+                    MessageBox.Show($"Bumm... Pont: {100 - mineList.Count}/{Point}", this.Text);
+                }
+                else
+                {
+                    Panel senderpanel = sender as Panel;
+                    senderpanel.Enabled = false;
+                    senderpanel.BackColor = Color.Green;
+                    Point++;
+                    labelPont.Text = Point.ToString();
+                    if (Point == (100 - mineList.Count))
+                    {
+                        Start = false;
                         foreach (var mitem in mineList)
                         {
-                            mitem.Enabled = false;
-                            mitem.BackColor = Color.Red;
+                            mitem.BackColor = Color.Yellow;
                         }
-                        Start = false;
-                        MessageBox.Show($"Bumm... Pont: {100 - mineList.Count}/{Point}", this.Text);
-                        break;
-                    }
-                    else if (i == mineList.Count-1)
-                    {
-                        Panel senderpanel = (Panel)sender;
-                        senderpanel.Enabled = false;
-                        senderpanel.BackColor = Color.Green;
-                        Point++;
-                        labelPont.Text = Point.ToString();
-                        if (Point == (100 - mineList.Count))
-                        {
-                            Start = false;
-                            foreach (var mitem in mineList)
-                            {
-                                mitem.BackColor = Color.Yellow;
-                            }
-                            MessageBox.Show($"Nyertél! Pont: {100 - mineList.Count}/{Point}", this.Text);
-                        }
+                        MessageBox.Show($"Nyertél! Pont: {100 - mineList.Count}/{Point}", this.Text);
                     }
                 }
             }
@@ -103,14 +99,6 @@ namespace MineSweeperApp
                     if (!mineList.Contains(rndPanel))
                     {
                         mineList.Add(rndPanel);
-                        if (Cheat)
-                        {
-                            rndPanel.BackColor = Color.Yellow;
-                        }
-                        else
-                        {
-                            rndPanel.BackColor = Color.White;
-                        }
                     }
                     else
                     {
@@ -119,7 +107,11 @@ namespace MineSweeperApp
                     }
                 }
                 panels[i].Enabled = true;
-                if (!mineList.Contains(panels[i]))
+                if (mineList.Contains(panels[i]) && Cheat)
+                {
+                    panels[i].BackColor = Color.Yellow;
+                }
+                else
                 {
                     panels[i].BackColor = Color.White;
                 }
