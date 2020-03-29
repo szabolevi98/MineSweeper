@@ -69,7 +69,7 @@ namespace MineSweeperApp
             }
             else
             {
-                if (buttonStart.Text == "Újra")
+                if (mineList.Count != 0)
                 {
                     MessageBox.Show("Kérlek indítsd el újra a játékot!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -85,15 +85,16 @@ namespace MineSweeperApp
             Point = 0;
             labelPont.Text = Point.ToString();
             buttonStart.Text = "Újra";
-            if (mineList.Any())
+            if (mineList.Count != 0)
             {
                 mineList.Clear();
             }
             Random r = new Random();
             List<Panel> panels = this.Controls.OfType<Panel>().ToList();
+            int mineNums = Convert.ToInt32(numericUpDown.Value);
             for (int i = 0; i < panels.Count; i++)
             {
-                if (i < numericUpDown.Value)
+                if (i < mineNums)
                 {
                     Panel rndPanel = panels[r.Next(0, panels.Count)];
                     if (!mineList.Contains(rndPanel))
