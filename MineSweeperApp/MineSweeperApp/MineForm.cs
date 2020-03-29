@@ -85,7 +85,7 @@ namespace MineSweeperApp
             Point = 0;
             labelPont.Text = Point.ToString();
             buttonStart.Text = "Újra";
-            if (mineList.Count != 0)
+            if (mineList.Any())
             {
                 mineList.Clear();
             }
