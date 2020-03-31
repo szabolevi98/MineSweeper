@@ -13,33 +13,48 @@ namespace MineSweeperApp
 {
     public partial class MineForm : Form
     {
-        private List<Panel> mineList = new List<Panel>();
-        private bool Cheat { get; set; } = false;
-        private bool Start { get; set; } = false;
-        private int Point { get; set; } = 0;
+        public List<Panel> mineList = new List<Panel>();
+        public bool cheat = false;
+        public bool start = false;
+        public int score = 0;
+        public int x = 10;
+        public int y = 34;
+        public int dist = 24;
+        public Point p;
 
         public MineForm()
         {
             for (int i = 0; i < 100; i++)
             {
-                Point p;
-                if (i < 10) { p = new Point(10 + (i * 26), 34); }
-                else if (i < 20) { p = new Point(10 + (i - 10) * 26, 60); }
-                else if (i < 30) { p = new Point(10 + (i - 20) * 26, 86); }
-                else if (i < 40) { p = new Point(10 + (i - 30) * 26, 112); }
-                else if (i < 50) { p = new Point(10 + (i - 40) * 26, 138); }
-                else if (i < 60) { p = new Point(10 + (i - 50) * 26, 164); }
-                else if (i < 70) { p = new Point(10 + (i - 60) * 26, 190); }
-                else if (i < 80) { p = new Point(10 + (i - 70) * 26, 216); }
-                else if (i < 90) { p = new Point(10 + (i - 80) * 26, 242); }
-                else { p = new Point(10 + (i - 90) * 26, 268); }
-                Panel panel = new Panel();
-                panel.BackColor = SystemColors.Control;
-                panel.BorderStyle = BorderStyle.FixedSingle;
-                panel.Location = p;
-                panel.Name = "panel" +i;
-                panel.Size = new Size(20, 20);
-                panel.Click += new EventHandler(panel_Click);
+                if (i < 10)
+                    p = new Point(x + (i * dist), 34);
+                else if (i < 20)
+                    p = new Point(x + (i - 10) * dist, y + dist * 1); 
+                else if (i < 30)
+                    p = new Point(x + (i - 20) * dist, y + dist * 2); 
+                else if (i < 40)
+                    p = new Point(x + (i - 30) * dist, y + dist * 3);
+                else if (i < 50)
+                    p = new Point(x + (i - 40) * dist, y + dist * 4);
+                else if (i < 60)
+                    p = new Point(x + (i - 50) * dist, y + dist * 5);
+                else if (i < 70)
+                    p = new Point(x + (i - 60) * dist, y + dist * 6);
+                else if (i < 80)
+                    p = new Point(x + (i - 70) * dist, y + dist * 7);
+                else if (i < 90)
+                    p = new Point(x + (i - 80) * dist, y + dist * 8);
+                else
+                    p = new Point(x + (i - 90) * dist, y + dist * 9);
+                Panel panel = new Panel
+                {
+                    BackColor = SystemColors.Control,
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Location = p,
+                    Name = "panel" + i,
+                    Size = new Size(20, 20)
+                };
+                panel.Click += new EventHandler(Panel_Click);
                 this.Controls.Add(panel);
             }
             InitializeComponent();
@@ -52,14 +67,14 @@ namespace MineSweeperApp
                 DialogResult result = MessageBox.Show("Engedélyezed a csalást?", this.Text, MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    Cheat = true;
+                    cheat = true;
                 }
             }
         }
 
-        private void panel_Click(object sender, EventArgs e)
+        private void Panel_Click(object sender, EventArgs e)
         {
-            if (Start)
+            if (start)
             {
                 if (mineList.Contains(sender))
                 {
@@ -68,24 +83,24 @@ namespace MineSweeperApp
                         mitem.Enabled = false;
                         mitem.BackColor = Color.Red;
                     }
-                    Start = false;
-                    MessageBox.Show($"Bumm... Pont: {100 - mineList.Count}/{Point}", this.Text);
+                    start = false;
+                    MessageBox.Show($"Bumm... Pont: {100 - mineList.Count}/{score}", this.Text);
                 }
                 else
                 {
                     Panel senderpanel = sender as Panel;
                     senderpanel.Enabled = false;
                     senderpanel.BackColor = Color.Green;
-                    Point++;
-                    labelPont.Text = Point.ToString();
-                    if (Point == (100 - mineList.Count))
+                    score++;
+                    labelPont.Text = score.ToString();
+                    if (score == (100 - mineList.Count))
                     {
-                        Start = false;
+                        start = false;
                         foreach (var mitem in mineList)
                         {
                             mitem.BackColor = Color.Yellow;
                         }
-                        MessageBox.Show($"Nyertél! Pont: {100 - mineList.Count}/{Point}", this.Text);
+                        MessageBox.Show($"Nyertél! Pont: {100 - mineList.Count}/{score}", this.Text);
                     }
                 }
             }
@@ -102,44 +117,45 @@ namespace MineSweeperApp
             }
         }
 
-        private void buttonStart_Click(object sender, EventArgs e)
+        private void ButtonStart_Click(object sender, EventArgs e)
         {
-            Point = 0;
-            labelPont.Text = Point.ToString();
+            score = 0;
+            labelPont.Text = score.ToString();
             buttonStart.Text = "Újra";
+            foreach (Panel panel in Controls.OfType<Panel>())
+            {
+                panel.Enabled = true;
+                panel.BackColor = Color.White;
+            }
+            int mineCount = Convert.ToInt32(numericUpDown.Value);
+            PlaceMines(mineCount);
+            start = true;
+        }
+        private void PlaceMines(int value)
+        {
+            Random r = new Random();
+            List<Panel> panels = this.Controls.OfType<Panel>().ToList();
             if (mineList.Count != 0)
             {
                 mineList.Clear();
             }
-            Random r = new Random();
-            List<Panel> panels = this.Controls.OfType<Panel>().ToList();
-            int mineNums = Convert.ToInt32(numericUpDown.Value);
-            for (int i = 0; i < panels.Count; i++)
+            for (int i = 0; i < value; i++)
             {
-                if (i < mineNums)
+                Panel rndPanel = panels[r.Next(panels.Count)];
+                if (!mineList.Contains(rndPanel))
                 {
-                    Panel rndPanel = panels[r.Next(0, panels.Count)];
-                    if (!mineList.Contains(rndPanel))
+                    mineList.Add(rndPanel);
+                    if (cheat)
                     {
-                        mineList.Add(rndPanel);
+                        rndPanel.BackColor = Color.Yellow;
                     }
-                    else
-                    {
-                        i--;
-                        continue;
-                    }
-                }
-                panels[i].Enabled = true;
-                if (mineList.Contains(panels[i]) && Cheat)
-                {
-                    panels[i].BackColor = Color.Yellow;
                 }
                 else
                 {
-                    panels[i].BackColor = Color.White;
+                    i--;
+                    continue;
                 }
             }
-            Start = true;
         }
     }
 }

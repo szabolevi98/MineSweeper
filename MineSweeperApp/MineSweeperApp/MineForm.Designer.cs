@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 10);
+            this.label1.Location = new System.Drawing.Point(8, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 2;
@@ -48,7 +48,7 @@
             // 
             // numericUpDown
             // 
-            this.numericUpDown.Location = new System.Drawing.Point(50, 8);
+            this.numericUpDown.Location = new System.Drawing.Point(50, 7);
             this.numericUpDown.Maximum = new decimal(new int[] {
             50,
             0,
@@ -70,18 +70,18 @@
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(107, 7);
+            this.buttonStart.Location = new System.Drawing.Point(107, 6);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(46, 22);
             this.buttonStart.TabIndex = 1;
             this.buttonStart.Text = "Mehet";
             this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 10);
+            this.label2.Location = new System.Drawing.Point(202, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 3;
@@ -90,7 +90,7 @@
             // labelPont
             // 
             this.labelPont.AutoSize = true;
-            this.labelPont.Location = new System.Drawing.Point(247, 10);
+            this.labelPont.Location = new System.Drawing.Point(230, 9);
             this.labelPont.Name = "labelPont";
             this.labelPont.Size = new System.Drawing.Size(13, 13);
             this.labelPont.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 296);
+            this.ClientSize = new System.Drawing.Size(256, 280);
             this.Controls.Add(this.numericUpDown);
             this.Controls.Add(this.labelPont);
             this.Controls.Add(this.label2);
