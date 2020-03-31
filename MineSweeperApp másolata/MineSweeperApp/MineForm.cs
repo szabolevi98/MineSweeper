@@ -20,26 +20,16 @@ namespace MineSweeperApp
 
         public MineForm()
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 200; i <= 300; i++)
             {
-                Point p;
-                if (i < 10) { p = new Point(10 + (i * 26), 34); }
-                else if (i < 20) { p = new Point(10 + (i - 10) * 26, 60); }
-                else if (i < 30) { p = new Point(10 + (i - 20) * 26, 86); }
-                else if (i < 40) { p = new Point(10 + (i - 30) * 26, 112); }
-                else if (i < 50) { p = new Point(10 + (i - 40) * 26, 138); }
-                else if (i < 60) { p = new Point(10 + (i - 50) * 26, 164); }
-                else if (i < 70) { p = new Point(10 + (i - 60) * 26, 190); }
-                else if (i < 80) { p = new Point(10 + (i - 70) * 26, 216); }
-                else if (i < 90) { p = new Point(10 + (i - 80) * 26, 242); }
-                else { p = new Point(10 + (i - 90) * 26, 268); }
                 Panel panel = new Panel();
                 panel.BackColor = SystemColors.Control;
                 panel.BorderStyle = BorderStyle.FixedSingle;
-                panel.Location = p;
-                panel.Name = "panel" +i;
+                panel.Location = new Point(i*2, i*2);
+                panel.Name = "panel" + i;
                 panel.Size = new Size(20, 20);
-                panel.Click += new EventHandler(panel_Click);
+                panel.Click += new EventHandler(this.panel_Click);
+
                 this.Controls.Add(panel);
             }
             InitializeComponent();
