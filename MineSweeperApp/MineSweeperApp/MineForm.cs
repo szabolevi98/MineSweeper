@@ -13,14 +13,15 @@ namespace MineSweeperApp
 {
     public partial class MineForm : Form
     {
-        public List<Panel> mineList = new List<Panel>();
-        public bool cheat = false;
-        public bool start = false;
-        public int score = 0;
+        private readonly List<Panel> mineList = new List<Panel>();
+        public Random r = new Random();
+        public Point p;
+        public bool start;
+        public bool cheat;
+        public int score;
         public int x = 10;
         public int y = 34;
         public int dist = 24;
-        public Point p;
 
         public MineForm()
         {
@@ -133,7 +134,6 @@ namespace MineSweeperApp
         }
         private void PlaceMines(int value)
         {
-            Random r = new Random();
             List<Panel> panels = this.Controls.OfType<Panel>().ToList();
             if (mineList.Count != 0)
             {
