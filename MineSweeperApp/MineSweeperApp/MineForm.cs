@@ -134,11 +134,11 @@ namespace MineSweeperApp
         }
         private void PlaceMines(int value)
         {
-            List<Panel> panels = this.Controls.OfType<Panel>().ToList();
             if (mineList.Count != 0)
             {
                 mineList.Clear();
             }
+            List<Panel> panels = this.Controls.OfType<Panel>().ToList();
             for (int i = 0; i < value; i++)
             {
                 Panel rndPanel = panels[r.Next(panels.Count)];
