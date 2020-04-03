@@ -20,10 +20,7 @@ namespace MineSweeperApp
 
         private void StartForm_Load(object sender, EventArgs e)
         {
-            if (Debugger.IsAttached)
-            {
-                checkBoxCheat.Visible = true;
-            }
+            checkBoxCheat.Visible = Debugger.IsAttached;
             for (int i = 10; i <= 32; i += 2)
             {
                 comboBox.Items.Add($"{i}x{i} Pálya");
