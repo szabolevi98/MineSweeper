@@ -13,53 +13,71 @@ namespace MineSweeperApp
     public partial class MineForm : Form
     {
         private readonly List<Panel> mineList = new List<Panel>();
-        public bool start;
-        public int score;
-        public bool cheat;
-        public int quantity;
+        public bool Start { get; set; }
+        public int Score { get; set; }
+        public bool Cheat { get; set; }
 
-        public MineForm(int qt, bool ch)
+        public MineForm(string[] args)
         {
-            this.cheat = ch;
-            this.quantity = qt;
-            InitializeComponent();   
+            InitializeComponent();
+            if (args.Length > 0)
+            {
+                if (args.Length == 1 && args[0] == "Cheat")
+                {
+                    Cheat = true;
+                }
+                else
+                {
+                    MessageBox.Show("Argumentum hiba!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
         }
 
         private void MineForm_Load(object sender, EventArgs e)
         {
-            CreateMineFields(quantity);
-            //Form átméretezése a dinamikus panelok miatt (AutoSize = ON)
-            this.MaximumSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
-            this.CenterToScreen();
+            using (InputForm input = new InputForm(Cheat))
+            {
+                if (input.ShowDialog() == DialogResult.OK) //InputForm-ban a gomb DialogResult-ja OK-ra van téve
+                {
+                    Cheat = input.Cheat;
+                    CreateMineFields(input.Quantity);
+                    this.MaximumSize = new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height); //Form átméretezése a panelok miatt, AutoSize True-ra állítva
+                    this.CenterToScreen(); //Az új méret miatt a CenterScreen már nincs pontosan középen, újra középre kell igazítani
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
         }
 
         private void Panel_Click(object sender, EventArgs e)
         {
-            if (start)
+            if (Start)
             {
                 int maxCount = Controls.OfType<Panel>().Count();
                 if (mineList.Contains(sender))
                 {
-                    start = false;
+                    Start = false;
                     foreach (Panel panel in mineList)
                     {
                         panel.BackColor = Color.Red;
                         panel.Enabled = false;
                     }
-                    MessageBox.Show($"Bumm... Pont: {maxCount - mineList.Count}/{score}", this.Text);
+                    MessageBox.Show($"Bumm... Pont: {maxCount - mineList.Count}/{Score}", this.Text);
                 }
                 else
                 {
                     Panel senderpanel = sender as Panel;
                     senderpanel.Enabled = false;
                     senderpanel.BackColor = Color.Green;
-                    score++;
-                    textBoxPont.Text = score.ToString("000");
-                    if (score == (100 - mineList.Count))
+                    Score++;
+                    textBoxPont.Text = Score.ToString("000");
+                    if (Score == (100 - mineList.Count))
                     {
-                        start = false;
+                        Start = false;
                         mineList.ForEach(x => x.BackColor = Color.Yellow);
-                        MessageBox.Show($"Nyertél! Pont: {maxCount - mineList.Count}/{score}", this.Text);
+                        MessageBox.Show($"Nyertél! Pont: {maxCount - mineList.Count}/{Score}", this.Text);
                     }
                 }
             }
@@ -78,8 +96,8 @@ namespace MineSweeperApp
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
-            score = 0;
-            textBoxPont.Text = score.ToString("000");
+            Score = 0;
+            textBoxPont.Text = Score.ToString("000");
             buttonStart.Text = "Újra";
             foreach (Panel panel in Controls.OfType<Panel>())
             {
@@ -88,7 +106,7 @@ namespace MineSweeperApp
             }
             int mineCount = Convert.ToInt32(numericUpDown.Value);
             PlaceMines(mineCount);
-            start = true;
+            Start = true;
         }
 
         private void CreateMineFields(int quantity)
@@ -130,7 +148,7 @@ namespace MineSweeperApp
                 if (!mineList.Contains(rndPanel))
                 {
                     mineList.Add(rndPanel);
-                    if (cheat)
+                    if (Cheat)
                     {
                         rndPanel.BackColor = Color.Yellow;
                     }

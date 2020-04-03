@@ -11,16 +11,22 @@ using System.Windows.Forms;
 
 namespace MineSweeperApp
 {
-    public partial class StartForm : Form
+    public partial class InputForm : Form
     {
-        public StartForm()
+        public int Quantity { get; set; }
+        public bool Cheat { get; set; }
+        public InputForm(bool cheat)
         {
             InitializeComponent();
+            this.Cheat = cheat;
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void InputForm_Load(object sender, EventArgs e)
         {
-            checkBoxCheat.Visible = Debugger.IsAttached;
+            if (Debugger.IsAttached || Cheat)
+            {
+                checkBoxCheat.Visible = true;
+            }
             for (int i = 10; i <= 32; i += 2)
             {
                 comboBox.Items.Add($"{i}x{i} Pálya");
@@ -30,12 +36,8 @@ namespace MineSweeperApp
 
         private void ButtonStart_Click(object sender, EventArgs e)
         {
-            bool cheat = checkBoxCheat.Checked;
-            int quantity = int.Parse(comboBox.SelectedItem.ToString().Substring(0, 2));
-            this.Hide();
-            MineForm mineform = new MineForm(quantity, cheat);
-            mineform.ShowDialog();
-            this.Close();
+            Cheat = checkBoxCheat.Checked;
+            Quantity = int.Parse(comboBox.SelectedItem.ToString().Substring(0, 2));
         }
     }
 }

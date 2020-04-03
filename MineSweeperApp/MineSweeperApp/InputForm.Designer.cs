@@ -1,6 +1,6 @@
 ﻿namespace MineSweeperApp
 {
-    partial class StartForm
+    partial class InputForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputForm));
             this.buttonStart = new System.Windows.Forms.Button();
             this.comboBox = new System.Windows.Forms.ComboBox();
             this.checkBoxCheat = new System.Windows.Forms.CheckBox();
@@ -36,6 +36,7 @@
             // 
             // buttonStart
             // 
+            this.buttonStart.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonStart.Location = new System.Drawing.Point(63, 36);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
@@ -64,7 +65,7 @@
             this.checkBoxCheat.UseVisualStyleBackColor = true;
             this.checkBoxCheat.Visible = false;
             // 
-            // StartForm
+            // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,10 +77,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "StartForm";
+            this.Name = "InputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MineSweeper";
-            this.Load += new System.EventHandler(this.StartForm_Load);
+            this.Load += new System.EventHandler(this.InputForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
