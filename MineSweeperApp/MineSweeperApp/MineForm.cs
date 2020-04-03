@@ -13,7 +13,6 @@ namespace MineSweeperApp
     public partial class MineForm : Form
     {
         private readonly List<Panel> mineList = new List<Panel>();
-        public Random r = new Random();
         public bool start;
         public int score;
         public bool cheat;
@@ -107,7 +106,7 @@ namespace MineSweeperApp
                     Panel panel = new Panel
                     {
                         Size = new Size(size, size),
-                        Location = startPoint + new Size(tmpPoint),
+                        Location = tmpPoint + new Size(startPoint),
                         BorderStyle = BorderStyle.FixedSingle,
                         BackColor = SystemColors.Control,
                         Parent = this
@@ -119,6 +118,7 @@ namespace MineSweeperApp
 
         private void PlaceMines(int value)
         {
+            Random r = new Random();
             if (mineList.Count != 0)
             {
                 mineList.Clear();
