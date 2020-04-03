@@ -15,6 +15,7 @@ namespace MineSweeperApp
     {
         public int Quantity { get; set; }
         public bool Cheat { get; set; }
+
         public InputForm(bool cheat)
         {
             InitializeComponent();
