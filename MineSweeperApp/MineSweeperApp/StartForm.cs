@@ -26,7 +26,7 @@ namespace MineSweeperApp
             }
             for (int i = 10; i <= 32; i += 2)
             {
-                comboBox.Items.Add($"{i}x{i} pálya");
+                comboBox.Items.Add($"{i}x{i} Pálya");
             }
             comboBox.SelectedIndex = 0;
         }
