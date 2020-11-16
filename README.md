@@ -1,2 +1,2 @@
 # MineSweeperApp
-![Screenshot](MineSweeperApp/MineSweeperApp.png?raw=true "MineSweeper")
+![Screenshot](MineSweeperApp.png?raw=true "MineSweeper")
